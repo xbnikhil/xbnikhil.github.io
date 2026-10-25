@@ -152,7 +152,7 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 ### 2026-10-25 — New header brand
 
 **Changed**
-- Header wordmark changed from “nikhil” to “little corner” in the display font (Bricolage Grotesque).
+- Header wordmark changed from “nikhil” to “littleCorner” in Space Grotesk (a distinctive geometric font loaded from Google Fonts).
 - Logo changed from the single “N” tile to a colorful “xb.” mark made of three flat, sharp-cornered color blocks: green `x`, purple `b`, orange `.` (no gradients).
 - Brand text now stays visible down to phones; hidden only below 640px to save space.
 - Logo mark lifts slightly on hover.

@@ -201,10 +201,11 @@ h3 {
 }
 
 .nav-logo-text {
-  font-family: var(--font-display);
+  font-family: 'Space Grotesk', 'Bricolage Grotesque', 'Segoe UI', system-ui,
+    sans-serif;
   font-weight: 600;
   font-size: 20px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
   color: var(--ink);
 }
 
