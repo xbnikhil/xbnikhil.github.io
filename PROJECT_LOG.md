@@ -149,6 +149,26 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — New header brand
+
+**Changed**
+- Header wordmark changed from “nikhil” to “little corner” in the display font (Bricolage Grotesque).
+- Logo changed from the single “N” tile to a colorful “xb.” mark made of three flat, sharp-cornered color blocks: green `x`, purple `b`, orange `.` (no gradients).
+- Brand text now stays visible down to phones; hidden only below 640px to save space.
+- Logo mark lifts slightly on hover.
+
+---
+
+### 2026-10-25 — Marquee restyled to match running-bar reference
+
+**Changed**
+- Replaced the single lime strip with flat colored blocks separated by gaps on the off-white canvas: bright green `#60ff90`, light purple `#b080ff`, and a gold `#c0a010` block every fifth item.
+- Text switched to a monospace ticker style with a trailing “↗” arrow instead of ✦ separators.
+- Marquee items rewritten in sentence case (“Coming soon”, “Colorful by design”, etc.).
+- Strip now uses thin hairlines instead of heavy ink borders, with the same infinite scroll + pause-on-hover behavior.
+
+---
+
 <!--
 Template for future entries:
 

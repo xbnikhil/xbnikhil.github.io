@@ -11,11 +11,13 @@ export default function Navbar() {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <NavLink to="/" className="nav-logo" aria-label="Home">
+        <NavLink to="/" className="nav-logo" aria-label="little corner — home">
           <span className="nav-logo-mark" aria-hidden="true">
-            N
+            <span className="mark-block mark-x">x</span>
+            <span className="mark-block mark-b">b</span>
+            <span className="mark-block mark-dot">.</span>
           </span>
-          <span className="nav-logo-text">nikhil</span>
+          <span className="nav-logo-text">little corner</span>
         </NavLink>
 
         <nav className="nav-links" aria-label="Main navigation">

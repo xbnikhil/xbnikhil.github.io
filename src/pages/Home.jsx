@@ -136,11 +136,11 @@ export default function Home() {
 
       <Marquee
         items={[
-          'coming soon',
-          'colorful by design',
-          'no page reloads',
-          'fresh ideas loading',
-          'chill zone',
+          'Coming soon',
+          'Colorful by design',
+          'No page reloads',
+          'Fresh ideas loading',
+          'Chill zone',
         ]}
       />
 
