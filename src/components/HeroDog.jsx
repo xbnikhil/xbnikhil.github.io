@@ -321,7 +321,7 @@ export default function HeroDog() {
         }
         headRef.current.setAttribute(
           'transform',
-          `rotate(${tilt.toFixed(2)} 132 96)`,
+          `rotate(${tilt.toFixed(2)} 105 72)`,
         )
       }
 
@@ -468,7 +468,7 @@ export default function HeroDog() {
       onKeyDown={handleKeyDown}
       role="button"
       tabIndex={0}
-      aria-label="A little dog — click to say hi and watch it get shy"
+      aria-label="A little robot — click to say hi and watch it get shy"
       title="Click me!"
     >
       <div className="dog-jump">
@@ -482,10 +482,10 @@ export default function HeroDog() {
             >
               <ellipse
                 className="dog-shadow"
-                cx="104"
-                cy="151.5"
-                rx="57"
-                ry="6.5"
+                cx="105"
+                cy="152"
+                rx="52"
+                ry="6"
                 fill="#1a1208"
                 opacity="0.14"
               />
@@ -496,416 +496,152 @@ export default function HeroDog() {
                 <path className="dog-speedline sl-3" d="M 24 120 h 16" />
               </g>
 
-              {/* tail */}
+              {/* rear flag / antenna-back detail that wags */}
               <g className="dog-tail">
                 <path
-                  d="M 68 100 C 50 103 33 95 30 79 C 28 68 39 63 45 71 C 50 78 45 87 57 91 C 64 93 72 87 76 80 C 80 87 78 95 73 99 C 71 101 70 100 68 100 Z"
-                  fill="#dc9d51"
-                  stroke="#3f2817"
+                  d="M 62 110 L 50 98 L 54 90 L 66 102 Z"
+                  fill="#c05000"
+                  stroke="#4a3728"
                   strokeWidth="2"
                   strokeLinejoin="round"
                 />
                 <path
-                  d="M 70 94 C 58 96 45 91 38 81"
+                  d="M 56 100 Q 48 96 52 88"
                   fill="none"
-                  stroke="#b87833"
-                  strokeWidth="2.4"
+                  stroke="#a06a42"
+                  strokeWidth="2"
                   strokeLinecap="round"
-                  opacity="0.75"
+                  opacity="0.7"
                 />
               </g>
 
-              {/* far legs */}
+              {/* treads / feet */}
               <g className="dog-leg dog-leg-hind-far">
-                <path
-                  d="M 80 104 C 73 115 70 129 73 141 C 74 147 84 147 85 141 L 87 123 L 94 104 Z"
-                  fill="#b87c3a"
-                  stroke="#3f2817"
-                  strokeWidth="2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M 75 140 q 4 3 8 0"
-                  fill="none"
-                  stroke="#3f2817"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                  opacity="0.8"
-                />
+                <rect x="80" y="138" width="9" height="9" rx="2" ry="2"
+                  fill="#b8a880" stroke="#4a3728" strokeWidth="2" />
               </g>
               <g className="dog-leg dog-leg-front-far">
-                <path
-                  d="M 122 104 C 117 116 116 131 119 142 C 120 148 130 148 131 142 L 133 121 L 139 104 Z"
-                  fill="#b87c3a"
-                  stroke="#3f2817"
-                  strokeWidth="2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M 121 141 q 4 3 8 0"
-                  fill="none"
-                  stroke="#3f2817"
-                  strokeWidth="1.4"
-                  strokeLinecap="round"
-                  opacity="0.8"
-                />
+                <rect x="100" y="138" width="9" height="9" rx="2" ry="2"
+                  fill="#b8a880" stroke="#4a3728" strokeWidth="2" />
+              </g>
+              <g className="dog-leg dog-leg-hind-near">
+                <rect x="114" y="138" width="9" height="9" rx="2" ry="2"
+                  fill="#c8b890" stroke="#4a3728" strokeWidth="2" />
+              </g>
+              <g className="dog-leg dog-leg-front-near">
+                <rect x="128" y="138" width="9" height="9" rx="2" ry="2"
+                  fill="#c8b890" stroke="#4a3728" strokeWidth="2" />
               </g>
 
               {/* body */}
               <g className="dog-body">
-                <path
-                  d="M 62 103 C 56 87 68 75 88 71 C 108 67 128 73 137 83 C 145 93 141 111 131 120 C 119 130 92 132 78 126 C 68 121 64 112 62 103 Z"
-                  fill="#e4a85e"
-                  stroke="#3f2817"
-                  strokeWidth="2.4"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M 72 87 C 81 77 94 73 107 73 C 119 73 129 78 135 84"
-                  fill="none"
-                  stroke="#f4c78a"
-                  strokeWidth="4.5"
-                  strokeLinecap="round"
-                  opacity="0.7"
-                />
-                <path
-                  d="M 77 119 C 91 128 113 129 127 119 C 122 127 106 131 92 130 C 84 129 80 125 77 119 Z"
-                  fill="#c98a45"
-                  opacity="0.55"
-                />
-                <path
-                  d="M 70 95 C 74 100 76 106 76 112"
-                  fill="none"
-                  stroke="#c98a45"
-                  strokeWidth="2.4"
-                  strokeLinecap="round"
-                  opacity="0.5"
-                />
-                <path
-                  d="M 133 85 C 143 93 146 107 139 118 C 134 125 124 129 115 127 C 123 121 127 112 126 103 C 125 94 128 87 133 85 Z"
-                  fill="#f6e2c0"
-                  stroke="#3f2817"
-                  strokeWidth="2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M 137 104 C 136 110 133 115 128 118"
-                  fill="none"
-                  stroke="#d9b98b"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  opacity="0.8"
-                />
+                <rect x="74" y="100" width="62" height="40" rx="10" ry="10"
+                  fill="#f0e6d2" stroke="#4a3728" strokeWidth="2.5" strokeLinejoin="round" />
+                {/* chest panel */}
+                <rect x="87" y="111" width="36" height="18" rx="5" ry="5"
+                  fill="#faf6ec" stroke="#4a3728" strokeWidth="1.6" opacity="0.92" />
+                <circle cx="105" cy="120" r="3" fill="#60ff90" />
+                <circle cx="105" cy="120" r="1" fill="#ffffff" opacity="0.8" />
               </g>
 
-              {/* near legs */}
-              <g className="dog-leg dog-leg-hind-near">
-                <path
-                  d="M 86 107 C 79 118 77 132 80 143 C 81 149 91 149 92 143 L 94 124 L 100 107 Z"
-                  fill="#e9ae64"
-                  stroke="#3f2817"
-                  strokeWidth="2.2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M 82 142 q 4 3 8 0"
-                  fill="none"
-                  stroke="#3f2817"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  opacity="0.85"
-                />
-              </g>
-              <g className="dog-leg dog-leg-front-near">
-                <path
-                  d="M 129 104 C 124 117 123 133 126 144 C 127 150 137 150 138 144 L 140 121 L 146 104 Z"
-                  fill="#e9ae64"
-                  stroke="#3f2817"
-                  strokeWidth="2.2"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M 128 143 q 4 3 8 0"
-                  fill="none"
-                  stroke="#3f2817"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  opacity="0.85"
-                />
-                <path
-                  d="M 133 112 C 132 120 132 130 133 138"
-                  fill="none"
-                  stroke="#d99a4e"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                  opacity="0.55"
-                />
-              </g>
+              {/* arms */}
+              <rect x="68" y="108" width="7" height="20" rx="3" ry="3"
+                fill="#e0d4b8" stroke="#4a3728" strokeWidth="2" />
+              <rect x="135" y="108" width="7" height="20" rx="3" ry="3"
+                fill="#e0d4b8" stroke="#4a3728" strokeWidth="2" />
 
-              {/* neck + collar */}
-              <path
-                d="M 120 93 C 117 79 124 68 136 65 L 151 76 C 147 91 141 101 132 106 Z"
-                fill="#e9ae64"
-                stroke="#3f2817"
-                strokeWidth="2.2"
-                strokeLinejoin="round"
-              />
-              <g className="dog-collar">
-                <path
-                  d="M 121 92 C 127 102 140 107 153 104 L 156 113 C 142 117 128 111 119 99 Z"
-                  fill="#6040f0"
-                  stroke="#3f2817"
-                  strokeWidth="2"
-                  strokeLinejoin="round"
-                />
-                <circle
-                  cx="155"
-                  cy="108"
-                  r="6.2"
-                  fill="#c0a010"
-                  stroke="#3f2817"
-                  strokeWidth="1.6"
-                />
-                <circle cx="155" cy="108" r="2" fill="#3f2817" opacity="0.55" />
-              </g>
+              {/* neck */}
+              <rect x="99" y="94" width="12" height="8" rx="2" ry="2"
+                fill="#f0e6d2" stroke="#4a3728" strokeWidth="2" />
 
               {/* head */}
               <g className="dog-head-motion">
                 <g className="dog-head" ref={headRef}>
+                  <rect x="80" y="52" width="50" height="42" rx="9" ry="9"
+                    fill="#faf6ec" stroke="#4a3728" strokeWidth="2.5" strokeLinejoin="round" />
+
+                  {/* side panels / ears */}
                   <g className="dog-ear dog-ear-far">
-                    <path
-                      d="M 160 23 C 172 12 190 17 192 31 C 194 42 185 50 176 45 C 167 40 163 31 160 23 Z"
-                      fill="#9c6029"
-                      stroke="#3f2817"
-                      strokeWidth="2.2"
-                      strokeLinejoin="round"
-                    />
+                    <rect x="70" y="68" width="11" height="22" rx="3" ry="3"
+                      fill="#e0d4b8" stroke="#4a3728" strokeWidth="2" />
                   </g>
-
-                  <path
-                    d="M 122 52 C 122 33 135 21 151 21 C 168 21 181 34 181 50 C 181 64 172 74 159 76 L 140 76 C 129 72 122 63 122 52 Z"
-                    fill="#e9ae64"
-                    stroke="#3f2817"
-                    strokeWidth="2.4"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M 149 60 C 166 55 183 63 187 77 C 190 90 178 100 165 97 C 152 95 145 85 145 74 C 145 67 146 63 149 60 Z"
-                    fill="#e9ae64"
-                    stroke="#3f2817"
-                    strokeWidth="2.4"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M 133 39 C 142 31 157 30 168 36 C 161 33 146 34 138 40 Z"
-                    fill="#c98a45"
-                    opacity="0.5"
-                  />
-
                   <g className="dog-ear dog-ear-near">
-                    <path
-                      d="M 129 38 C 114 31 100 41 98 56 C 96 71 105 84 116 82 C 125 80 128 68 130 55 Z"
-                      fill="#a96a2f"
-                      stroke="#3f2817"
-                      strokeWidth="2.4"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M 122 46 C 113 45 106 52 104 63"
-                      fill="none"
-                      stroke="#7e4d21"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      opacity="0.6"
-                    />
+                    <rect x="129" y="68" width="11" height="22" rx="3" ry="3"
+                      fill="#e0d4b8" stroke="#4a3728" strokeWidth="2" />
                   </g>
 
-                  <ellipse
-                    cx="168"
-                    cy="82"
-                    rx="22"
-                    ry="16.5"
-                    fill="#f7e6c8"
-                    stroke="#3f2817"
-                    strokeWidth="2.2"
-                  />
+                  {/* antenna */}
+                  <line x1="105" y1="52" x2="105" y2="40"
+                    stroke="#a06a42" strokeWidth="3" strokeLinecap="round" />
+                  <circle cx="105" cy="37" r="3.5" fill="#c05000" stroke="#4a3728" strokeWidth="1.5" />
 
-                  <g fill="#c98a45" opacity="0.5">
-                    <circle cx="156" cy="86" r="1.6" />
-                    <circle cx="161" cy="90" r="1.5" />
-                    <circle cx="153" cy="91" r="1.2" />
-                  </g>
-
-                  <ellipse
-                    className="dog-blush"
-                    cx="148"
-                    cy="80"
-                    rx="8.5"
-                    ry="4.8"
-                    fill="#ef7a8c"
-                  />
-
-                  {expression === 'excited' ? (
-                    <g className="dog-mouth">
-                      <path
-                        d="M 170 87 C 172 97 183 100 189 90 C 185 92 176 92 172 89 Z"
-                        fill="#7c2f3a"
-                        stroke="#3f2817"
-                        strokeWidth="2"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M 177 92 C 175 100 184 103 187 95 C 184 97 180 95 177 92 Z"
-                        fill="#ef7a8c"
-                      />
-                    </g>
-                  ) : expression === 'shy' ? (
-                    <path
-                      className="dog-mouth"
-                      d="M 173 91 q 3.5 -2.5 7 0 q 3.5 2.5 7 0"
-                      fill="none"
-                      stroke="#3f2817"
-                      strokeWidth="2.2"
-                      strokeLinecap="round"
-                    />
-                  ) : (
-                    <g className="dog-mouth">
-                      <path
-                        d="M 171 88 C 175 93 183 94 188 89"
-                        fill="none"
-                        stroke="#3f2817"
-                        strokeWidth="2.4"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M 178 92 C 178 96 181 97 183 93 Z"
-                        fill="#ef7a8c"
-                      />
-                    </g>
-                  )}
-
-                  <ellipse
-                    cx="182"
-                    cy="75"
-                    rx="9.5"
-                    ry="7.5"
-                    fill="#2b1a10"
-                    stroke="#3f2817"
-                    strokeWidth="1.6"
-                  />
-                  <ellipse cx="179" cy="72" rx="3.2" ry="2" fill="#ffffff" opacity="0.55" />
-                  <path
-                    d="M 176 80 q 6 2 11 -1"
-                    fill="none"
-                    stroke="#140b06"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                    opacity="0.5"
-                  />
-
-                  {expression === 'excited' ? (
-                    <g
-                      className="dog-brows"
-                      fill="none"
-                      stroke="#3f2817"
-                      strokeWidth="2.4"
-                      strokeLinecap="round"
-                    >
-                      <path d="M 132 37 C 137 31 145 31 149 36" />
-                      <path d="M 154 33 C 160 28 169 30 173 35" />
-                    </g>
-                  ) : expression === 'shy' ? (
-                    <g
-                      className="dog-brows"
-                      fill="none"
-                      stroke="#3f2817"
-                      strokeWidth="2.4"
-                      strokeLinecap="round"
-                    >
-                      <path d="M 132 40 C 138 35 145 36 149 41" />
-                      <path d="M 155 38 C 161 33 168 34 172 39" />
-                    </g>
-                  ) : (
-                    <g
-                      className="dog-brows"
-                      fill="none"
-                      stroke="#3f2817"
-                      strokeWidth="2.2"
-                      strokeLinecap="round"
-                    >
-                      <path d="M 134 39 C 138 36 144 36 147 38" />
-                      <path d="M 156 36 C 160 33 167 34 170 37" />
-                    </g>
-                  )}
-
+                  {/* eyes */}
                   <g className="dog-eye dog-eye-far">
-                    <ellipse
-                      cx="141"
-                      cy="52"
-                      rx="6.6"
-                      ry="7.8"
-                      fill="#fffdf6"
-                      stroke="#3f2817"
-                      strokeWidth="1.9"
-                    />
+                    <circle cx="96" cy="78" r="7" fill="#2b2b2b" stroke="#4a3728" strokeWidth="1.5" />
                     <g className="dog-pupil">
                       <g className="dog-pupil-core">
-                        <circle cx="141.5" cy="52.5" r="4.2" fill="#2b1a10" />
-                        <ellipse
-                          cx="140"
-                          cy="50.7"
-                          rx="1.4"
-                          ry="1.2"
-                          fill="#ffffff"
-                          opacity="0.9"
-                        />
+                        <circle cx="96" cy="78" r="2.6" fill="#111" />
+                        <ellipse cx="95" cy="77" rx="1" ry="0.9" fill="#ffffff" opacity="0.9" />
                       </g>
                     </g>
                   </g>
                   <g className="dog-eye dog-eye-near">
-                    <ellipse
-                      cx="161"
-                      cy="49"
-                      rx="7.4"
-                      ry="8.6"
-                      fill="#fffdf6"
-                      stroke="#3f2817"
-                      strokeWidth="2"
-                    />
+                    <circle cx="114" cy="78" r="7" fill="#2b2b2b" stroke="#4a3728" strokeWidth="1.5" />
                     <g className="dog-pupil">
                       <g className="dog-pupil-core">
-                        <circle cx="161.5" cy="49.5" r="4.7" fill="#2b1a10" />
-                        <ellipse
-                          cx="159.8"
-                          cy="47.5"
-                          rx="1.6"
-                          ry="1.4"
-                          fill="#ffffff"
-                          opacity="0.92"
-                        />
-                        <circle cx="163.6" cy="52.8" r="0.9" fill="#ffffff" opacity="0.6" />
+                        <circle cx="114" cy="78" r="2.6" fill="#111" />
+                        <ellipse cx="113" cy="77" rx="1" ry="0.9" fill="#ffffff" opacity="0.92" />
+                        <circle cx="115.6" cy="80.6" r="0.8" fill="#ffffff" opacity="0.6" />
                       </g>
                     </g>
+                  </g>
+
+                  {expression === 'excited' ? (
+                    <g className="dog-mouth">
+                      <rect x="98" y="90" width="14" height="7" rx="3" ry="3"
+                        fill="#ef7a8c" stroke="#4a3728" strokeWidth="2" />
+                      <rect x="102" y="92" width="6" height="3" fill="#ffffff" opacity="0.7" />
+                    </g>
+                  ) : expression === 'shy' ? (
+                    <path className="dog-mouth"
+                      d="M 98 92 Q 105 96 112 92"
+                      fill="none" stroke="#4a3728" strokeWidth="2.2" strokeLinecap="round" />
+                  ) : (
+                    <g className="dog-mouth">
+                      <path d="M 99 89 Q 105 93 111 89"
+                        fill="none" stroke="#4a3728" strokeWidth="2.2" strokeLinecap="round" />
+                      <rect x="102" y="91" width="6" height="2" fill="#ef7a8c" opacity="0.7" />
+                    </g>
+                  )}
+
+                  {expression === 'excited' ? (
+                    <g className="dog-brows" fill="none" stroke="#4a3728" strokeWidth="2.4" strokeLinecap="round">
+                      <path d="M 90 72 Q 96 68 102 72" />
+                      <path d="M 108 72 Q 114 68 120 72" />
+                    </g>
+                  ) : expression === 'shy' ? (
+                    <g className="dog-brows" fill="none" stroke="#4a3728" strokeWidth="2.4" strokeLinecap="round">
+                      <path d="M 91 74 Q 96 78 101 74" />
+                      <path d="M 109 74 Q 114 78 119 74" />
+                    </g>
+                  ) : (
+                    <g className="dog-brows" fill="none" stroke="#4a3728" strokeWidth="2.2" strokeLinecap="round">
+                      <path d="M 92 73 Q 96 71 100 73" />
+                      <path d="M 110 73 Q 114 71 118 73" />
+                    </g>
+                  )}
+
+                  <g className="dog-blush">
+                    <circle cx="88" cy="84" r="2.6" fill="#ef7a8c" />
+                    <circle cx="122" cy="84" r="2.6" fill="#ef7a8c" />
                   </g>
                 </g>
               </g>
 
               <g className="dog-sparks" aria-hidden="true">
-                <path
-                  className="dog-spark sp-1"
-                  d="M 36 40 l 3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z"
-                  fill="#c0a010"
-                />
-                <path
-                  className="dog-spark sp-2"
-                  d="M 198 28 l 2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z"
-                  fill="#6040f0"
-                />
-                <path
-                  className="dog-spark sp-3"
-                  d="M 72 10 l 2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z"
-                  fill="#008030"
-                />
+                <path className="dog-spark sp-1" d="M 36 40 l 3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#c0a010" />
+                <path className="dog-spark sp-2" d="M 198 28 l 2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2 z" fill="#6040f0" />
+                <path className="dog-spark sp-3" d="M 72 10 l 2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z" fill="#008030" />
               </g>
             </svg>
           </div>

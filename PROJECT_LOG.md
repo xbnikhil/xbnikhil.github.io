@@ -208,6 +208,19 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Simple WALL-E-style robot pet (art replacement)
+
+**Changed**
+- Replaced the detailed dog SVG with a simpler chibi robot companion: beige `#f0e6d2` body with rust `#c05000` accents, big round lens eyes `#2b2b2b`, single head antenna, side-panel ears, tread feet, chest button, and rosy blush cheeks — while keeping every behavior identical.
+- Same hero bottom-lane chase, cursor tracking, head tilt, blink, three jump variants (random, never consecutive), and the shy → corner flee → peek → return sequence.
+- All behavior class names (`dog-leg`, `dog-eye`, `dog-ear`, `dog-tail`, `dog-shadow`, `dog-spark`, `dog-mouth`, `dog-blush`, `dog-brows`) kept so the existing CSS animations still drive movement; head orientation is owned by the JS transform attribute rather than CSS to avoid double transforms.
+- Head rotation pivot moved to center (`105 72`) to match the robot's centered head.
+
+**Notes**
+- Verified in headless Chrome: mount, chase left/right, jump variants alternate, peek lands at `x≈1326 y≈823`, return inside hero, zero console errors. Colors pixel-verified (`#f0e6d2`, `#faf6ec`, `#4a3728`, `#e0d4b8`).
+
+---
+
 <!--
 Template for future entries:
 

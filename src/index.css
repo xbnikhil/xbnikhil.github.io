@@ -472,23 +472,11 @@ h3 {
 }
 
 /* ----- head, ears, eyes ----- */
+/* Head orientation is owned by the JS transform attribute on .dog-head
+   (cursor tracking + shy/peek tilts), so this group stays transform-free. */
 .dog-head-motion {
   transform-box: fill-box;
-  transform-origin: 33% 96%;
-  transition: transform 0.25s ease;
-}
-
-.hero-dog[data-walking='true'] .dog-head-motion {
-  animation: headBob 0.46s ease-in-out infinite;
-}
-
-.hero-dog.expr-shy .dog-head-motion {
-  animation: none;
-  transform: rotate(9deg) translateY(4px);
-}
-
-.hero-dog.expr-excited .dog-head-motion {
-  animation: headBop 0.42s ease-in-out infinite;
+  transform-origin: 50% 50%;
 }
 
 .dog-ear {
