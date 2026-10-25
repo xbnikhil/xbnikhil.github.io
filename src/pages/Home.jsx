@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Marquee from '../components/Marquee'
 import Reveal from '../components/Reveal'
+import HeroDog from '../components/HeroDog'
 
 const vibeCards = [
   {
@@ -67,6 +68,8 @@ export default function Home() {
             ↓
           </span>
         </a>
+
+        <HeroDog />
       </section>
 
       <div className="color-strip" aria-hidden="true">

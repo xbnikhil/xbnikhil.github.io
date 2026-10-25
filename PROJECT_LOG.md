@@ -177,6 +177,19 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Interactive CSS dog in the hero
+
+**Changed**
+- Added `HeroDog.jsx`: a dog drawn entirely with CSS (body, head, ears, legs, tail, eyes, nose, mouth, purple collar) — no images.
+- The dog roams slowly along the bottom of the hero section.
+- Its pupils follow the mouse cursor, and its head tilts slightly toward the pointer.
+- Clicking anywhere on the page makes the dog jump happily.
+- Clicking the dog hides it at the bottom-right corner of the page; it peeks out, then returns to roaming after ~3.5 seconds.
+- Keyboard accessible (Enter/Space), with a focus outline; animations respect reduced motion.
+- Hero now clips overflow horizontally so roaming stays contained.
+
+---
+
 <!--
 Template for future entries:
 
