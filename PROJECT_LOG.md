@@ -190,6 +190,24 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Detailed animated SVG dog
+
+**Changed**
+- Rebuilt `HeroDog.jsx` from blocky CSS shapes into a layered SVG character: four articulated legs, layered chest/body fur, floppy ears, wagging tail, expressive eyes with highlights and lids, brows, muzzle, freckles, nose highlight, tongue, purple collar with gold tag, soft shadow, and speed lines/sparkles.
+- Art faces right; turning is a single `scaleX(var(--facing))` flip on `.dog-face`, with a springy transition so the dog visibly turns around.
+- Chase loop now runs on a `requestAnimationFrame` state machine constrained to the hero's bottom lane; speed scales with distance (walk vs. run gait), and idle wandering takes over ~5s after the cursor stops.
+- Eyes track the cursor; the head tilts toward it, and both look away shyly during the shy/return phases.
+- Three distinct jump routines (`jump-1/2/3`) picked at random and never repeated back-to-back: a straight hop, a double bounce, and a big twisting leap, each with squash/stretch, paddling legs, sparkles, and a pulsing shadow.
+- Dog click sequence: blush + drooped ears/head + tucked tail + wavy mouth → sprint to the viewport's bottom-right corner → hide → peek back into the page → return to mid-hero shy → resume chasing.
+- Dog gained a dedicated lane in the hero (`--dog-size` plus matching `padding-bottom`) so it never overlaps the badges; the old scroll hint was removed to offset the extra height, and a short-screen query keeps the color strip above the fold down to 360×640.
+- `pageIn` page transition is now opacity-only: its former `translateY` created a containing block for `position: fixed`, which offset the dog's corner peek by the 73px header.
+- Keyboard accessible (Enter/Space) with `aria-label` and a focus ring; `prefers-reduced-motion` parks the dog and disables the chase.
+
+**Notes**
+- Verified in headless Chrome: all phases and expressions fire, jump variants alternate, peek lands at the viewport corner, return lands inside the hero, no console errors, no horizontal overflow, and dog colors render as intended (amber `#e9ae64`, cream `#f7e6c8`, brown `#a96a2f`, ink `#3f2817`, purple `#6040f0`).
+
+---
+
 <!--
 Template for future entries:
 

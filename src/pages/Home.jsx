@@ -62,13 +62,6 @@ export default function Home() {
           </ul>
         </div>
 
-        <a className="scroll-hint" href="#vibe" aria-label="Scroll to content">
-          <span>scroll</span>
-          <span className="scroll-arrow" aria-hidden="true">
-            ↓
-          </span>
-        </a>
-
         <HeroDog />
       </section>
 
