@@ -2,7 +2,7 @@
 
 My personal portfolio website — built with **React + Vite + React Router**, and deployed automatically to **GitHub Pages** on every push to `main`.
 
-**Live site:** https://xbnikhil.github.io/Nikhil-Portfolio/
+**Live site:** https://xbnikhil.github.io/
 
 > 📓 Project activity and decision history is tracked in [`PROJECT_LOG.md`](./PROJECT_LOG.md).
 
@@ -31,8 +31,8 @@ npm run preview  # preview the production build locally
 
 Every push to `main` triggers the workflow in `.github/workflows/deploy.yml`, which builds the site and deploys it to GitHub Pages.
 
-- **Live URL:** https://xbnikhil.github.io/Nikhil-Portfolio/
-- **Actions:** https://github.com/xbnikhil/Nikhil-Portfolio/actions
+- **Live URL:** https://xbnikhil.github.io/
+- **Actions:** https://github.com/xbnikhil/xbnikhil.github.io/actions
 
 ### How changes go live
 

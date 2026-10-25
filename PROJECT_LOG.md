@@ -9,8 +9,8 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 | | |
 |---|---|
 | **Project** | Nikhil's Portfolio website |
-| **Repo** | https://github.com/xbnikhil/Nikhil-Portfolio |
-| **Live site** | https://xbnikhil.github.io/Nikhil-Portfolio/ |
+| **Repo** | https://github.com/xbnikhil/xbnikhil.github.io |
+| **Live site** | https://xbnikhil.github.io/ |
 | **Local folder** | `Desktop/Opencode/Portfolio-Nikhil` |
 | **Tech stack** | React 19 + Vite + React Router |
 | **Hosting** | GitHub Pages (auto-deploy via GitHub Actions) |
@@ -107,6 +107,34 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 **Pending / TODO**
 - Confirm the exact button design with the user (screenshots can't be viewed by this model).
 - Real content still TBD.
+
+---
+
+### 2026-10-25 — Moved to root GitHub Pages domain
+
+**Direction**
+- The site should live at `https://xbnikhil.github.io/` (root user site), not `https://xbnikhil.github.io/Nikhil-Portfolio/`. The logo should point at the root, and the old project subpath should not be the canonical site.
+
+**Changed**
+- Created the public repo `xbnikhil/xbnikhil.github.io` (required for a GitHub Pages root site).
+- Set `base: '/'` in `vite.config.js` and rebuilt.
+- Pushed the site source to the new repo and enabled GitHub Pages (GitHub Actions build) at the root.
+- Internal navigation uses React Router relative paths, so the site works unchanged at the root.
+- Updated README and this log with the new live URL and repo.
+- The old `Nikhil-Portfolio` repo remains as an archive; the root site is now canonical.
+
+---
+
+### 2026-10-25 — Added profile photo to About page
+
+**Changed**
+- Copied `Desktop/profile.PNG` into `public/assets/profile.png`.
+- About page now shows a circular portrait (4px ink border, no gradient) beside the intro text.
+- Added `.about-intro` / `.portrait` styles with responsive stacking on smaller screens.
+
+**Notes**
+- The photo is served from `public/assets/profile.png`, so it deploys automatically with the site.
+- Portrait is intentionally compact (not a giant hero photo) to keep the minimal feel.
 
 ---
 

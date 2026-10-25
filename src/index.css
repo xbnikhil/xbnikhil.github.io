@@ -1,23 +1,23 @@
 :root {
-  --canvas: #fbfaf6;
+  --canvas: #f0f0f0;
   --surface: #ffffff;
-  --ink: #141518;
-  --ink-soft: #5c6167;
-  --line: #e6e4dc;
-  --line-strong: #d7d5cb;
+  --ink: #0d0d0d;
+  --ink-soft: #4f4f4f;
+  --line: #dcdcdc;
+  --line-strong: #c7c7c7;
 
-  --lime: #9be15d;
-  --lime-soft: #eefadf;
-  --lime-deep: #3f7a1a;
-  --purple: #7c5cff;
-  --purple-soft: #efecff;
-  --orange: #ff8a4c;
-  --peach-soft: #fff0e6;
-  --yellow: #ffd45e;
-  --pink: #ff8fb8;
-  --pink-soft: #ffecf3;
-  --blue: #5f8bff;
-  --blue-soft: #ecf1ff;
+  --lime: #60ff90;
+  --lime-soft: #e3f4e9;
+  --lime-deep: #008030;
+  --purple: #6040f0;
+  --purple-soft: #ece8ff;
+  --orange: #c05000;
+  --peach-soft: #f9ece3;
+  --yellow: #c0a010;
+  --pink: #b080ff;
+  --pink-soft: #f0e8ff;
+  --blue: #1090ff;
+  --blue-soft: #e6f2ff;
 
   --font-display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -92,12 +92,13 @@ h3 {
 
 .btn-primary {
   background: var(--ink);
-  color: var(--canvas);
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background: var(--lime);
-  color: var(--ink);
+  background: var(--lime-deep);
+  border-color: var(--lime-deep);
+  color: #ffffff;
 }
 
 .btn-ghost {
@@ -106,18 +107,21 @@ h3 {
 }
 
 .btn-ghost:hover {
-  background: var(--lime);
+  background: var(--lime-deep);
+  border-color: var(--lime-deep);
+  color: #ffffff;
 }
 
 .btn-dark {
   background: var(--ink);
-  color: var(--canvas);
+  color: #ffffff;
   border-color: var(--ink);
 }
 
 .btn-dark:hover {
-  background: var(--surface);
-  color: var(--ink);
+  background: var(--lime-deep);
+  border-color: var(--lime-deep);
+  color: #ffffff;
 }
 
 .btn-outline-dark {
@@ -127,7 +131,9 @@ h3 {
 }
 
 .btn-outline-dark:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--lime-deep);
+  border-color: var(--lime-deep);
+  color: #ffffff;
 }
 
 .btn-small {
@@ -165,7 +171,8 @@ h3 {
   width: 32px;
   height: 32px;
   border: 1px solid var(--ink);
-  background: var(--lime);
+  background: var(--lime-deep);
+  color: #ffffff;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 18px;
@@ -200,7 +207,7 @@ h3 {
 .nav-link.active {
   color: var(--ink);
   font-weight: 600;
-  box-shadow: inset 0 -2px 0 var(--ink);
+  box-shadow: inset 0 -2px 0 var(--lime-deep);
 }
 
 /* ---------- Hero ---------- */
@@ -641,6 +648,31 @@ h3 {
 }
 
 /* ---------- About ---------- */
+.about-intro {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.portrait {
+  width: 340px;
+  height: 340px;
+  margin: 0;
+  border: 4px solid var(--ink);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--lime-soft);
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .paper-card {
   max-width: 860px;
   padding: 44px;
@@ -926,6 +958,16 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-intro {
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+  }
+
+  .portrait {
+    width: 280px;
+    height: 280px;
+  }
+
   .cooking-card {
     grid-template-columns: 1fr;
   }
@@ -988,6 +1030,17 @@ h3 {
   .fun-grid,
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portrait {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
   }
 
   .cooking-copy,

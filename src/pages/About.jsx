@@ -19,23 +19,37 @@ export default function About() {
 
       <section className="section">
         <div className="container">
-          <Reveal>
-            <article className="paper-card">
-              <h2>Under construction, on purpose.</h2>
-              <p>
-                I'm still figuring out exactly what this little corner of the
-                internet should be. What I do know: it won't be the usual
-                “passionate world-class developer” wall of text.
-              </p>
-              <p>
-                When there's a real story to tell — background, what I'm into,
-                what I'm building — it'll land right here. Until then, enjoy
-                the colors.
-              </p>
-            </article>
-          </Reveal>
+          <div className="about-intro">
+            <Reveal>
+              <figure className="portrait">
+                <img
+                  src="/assets/profile.png"
+                  alt="Portrait of Nikhil"
+                  width="340"
+                  height="340"
+                  loading="lazy"
+                />
+              </figure>
+            </Reveal>
 
-          <Reveal delay={120}>
+            <Reveal delay={120}>
+              <article className="paper-card">
+                <h2>Under construction, on purpose.</h2>
+                <p>
+                  I'm still figuring out exactly what this little corner of the
+                  internet should be. What I do know: it won't be the usual
+                  “passionate world-class developer” wall of text.
+                </p>
+                <p>
+                  When there's a real story to tell — background, what I'm
+                  into, what I'm building — it'll land right here. Until then,
+                  enjoy the colors.
+                </p>
+              </article>
+            </Reveal>
+          </div>
+
+          <Reveal delay={180}>
             <div className="fun-grid">
               <div className="card card-lilac">
                 <span className="card-emoji" aria-hidden="true">
@@ -61,7 +75,7 @@ export default function About() {
             </div>
           </Reveal>
 
-          <Reveal delay={200}>
+          <Reveal delay={240}>
             <div className="section-cta">
               <Link className="btn btn-primary" to="/contact">
                 Say hi <span className="arrow">→</span>
