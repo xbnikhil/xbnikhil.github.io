@@ -40,9 +40,8 @@ export default function Home() {
           </h1>
 
           <p className="hero-sub">
-            Not your average portfolio. No giant photo, no “world-class
-            developer” speech. Just a bright, chill spot where I'll share what
-            I build, what I learn, and whatever randomness sticks.
+            Just a bright, chill spot where I'll share what I build, what I
+            learn, and whatever randomness sticks.
           </p>
 
           <div className="hero-actions">

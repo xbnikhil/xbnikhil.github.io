@@ -140,6 +140,15 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Hero trim, shorter hero, photo crop adjustment
+
+**Changed**
+- Removed the opener (“Not your average portfolio. No giant photo…” ) from the hero paragraph; the remaining sentence is kept.
+- Reduced hero height with fluid padding (`clamp` using `vh`), tighter margins, and a slightly smaller max title size so the color strip is visible without scrolling and adapts to device height.
+- Nudged the profile photo up inside the circular crop (`object-position: center 18%`).
+
+---
+
 <!--
 Template for future entries:
 
