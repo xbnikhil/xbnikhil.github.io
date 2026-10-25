@@ -807,6 +807,161 @@ h3 {
   font-size: 22px;
 }
 
+/* ---------- Experience ---------- */
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.experience-entry {
+  display: flex;
+  gap: 16px;
+  padding: 20px 24px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  border-radius: 0;
+}
+
+.experience-entry:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.experience-logo {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ink);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.experience-logo.logo-lime {
+  background: var(--lime-deep);
+}
+
+.experience-logo.logo-purple {
+  background: var(--purple);
+}
+
+.experience-logo.logo-orange {
+  background: var(--orange);
+}
+
+.experience-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.experience-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-role {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.experience-company {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.experience-dates {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.experience-duration {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.experience-location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.experience-note {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.experience-skills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.skill-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.skill-list {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.experience-entry.logo-lime .skill-bullet {
+  background: var(--lime-deep);
+}
+
+.experience-entry.logo-purple .skill-bullet {
+  background: var(--purple);
+}
+
+.experience-entry.logo-orange .skill-bullet {
+  background: var(--orange);
+}
+
+@media (max-width: 640px) {
+  .experience-entry {
+    padding: 16px 20px;
+    flex-direction: column;
+  }
+
+  .experience-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .experience-role {
+    font-size: 17px;
+  }
+}
+
 /* ---------- Cooking card ---------- */
 .cooking-card {
   display: grid;

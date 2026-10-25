@@ -221,6 +221,20 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Experience section + new hero copy
+
+**Changed**
+- Hero pill changed to "Hey, I'm Nikhil — welcome in." and hero title changed to "My always-in-progress digital basecamp." with "always-in-progress" highlighted using the existing `.accent-word` style (lime background).
+- Hero sub changed to "A home for the projects I build, tools I explore, and lessons I pick up along the way."
+- Added an `Experience` section below the color strip with three entries matching the screenshot:
+  - Software Developer, Vidushi Infotech SSP Pvt. Ltd. (Dec 2025 – Present, 11 mos, On-site)
+  - Web Developer, PanGrow (Sep 2023 – Mar 2025, 1 yr 7 mos, On-site)
+  - Web Developer, Plus91 Technologies Pvt. Ltd. (Jan 2022 – Jul 2023, 1 yr 7 mos, On-site)
+- Each entry has a colored lettermark logo (lime/purple/orange), role + company + type, dates/duration, location/onsite, optional role note, and a skills line with a colored bullet — all using the site's sharp-border, 0px-radius design system.
+- Responsive: entries stack vertically on screens ≤640px.
+
+---
+
 <!--
 Template for future entries:
 

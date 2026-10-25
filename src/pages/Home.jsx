@@ -3,6 +3,46 @@ import Marquee from '../components/Marquee'
 import Reveal from '../components/Reveal'
 import HeroDog from '../components/HeroDog'
 
+const experience = [
+  {
+    role: 'Software Developer',
+    company: 'Vidushi Infotech SSP Pvt. Ltd.',
+    type: 'Full-time',
+    dates: 'Dec 2025 – Present',
+    duration: '11 mos',
+    location: 'Pune District, Maharashtra, India',
+    onsite: 'On-site',
+    logo: 'VI',
+    logoTone: 'logo-lime',
+    skills: 'Bootstrap (Framework), Css and +10 skills',
+  },
+  {
+    role: 'Web Developer',
+    company: 'PanGrow',
+    type: 'Full-time',
+    dates: 'Sep 2023 – Mar 2025',
+    duration: '1 yr 7 mos',
+    location: 'Pune District, Maharashtra, India',
+    onsite: 'On-site',
+    roleNote: 'Wordpress website developer',
+    logo: 'PG',
+    logoTone: 'logo-purple',
+    skills: 'Back-End Web Development, HTML and +10 skills',
+  },
+  {
+    role: 'Web Developer',
+    company: 'Plus91 Technologies Pvt. Ltd.',
+    type: 'Full-time',
+    dates: 'Jan 2022 – Jul 2023',
+    duration: '1 yr 7 mos',
+    location: 'Pune District, Maharashtra, India',
+    onsite: 'On-site',
+    logo: 'P9',
+    logoTone: 'logo-orange',
+    skills: 'HTML, JavaScript and +6 skills',
+  },
+]
+
 const vibeCards = [
   {
     emoji: '🛠️',
@@ -31,18 +71,17 @@ export default function Home() {
         <div className="container hero-inner">
           <p className="hero-pill">
             <span className="hero-pill-dot" aria-hidden="true" />
-            hey, i'm nikhil — welcome in
+            Hey, I'm Nikhil — welcome in.
           </p>
 
           <h1 className="hero-title">
-            My little corner
-            <br />
-            of the <span className="accent-word">internet</span>.
+            My <span className="accent-word">always-in-progress</span> digital
+            basecamp.
           </h1>
 
           <p className="hero-sub">
-            Just a bright, chill spot where I'll share what I build, what I
-            learn, and whatever randomness sticks.
+            A home for the projects I build, tools I explore, and lessons I
+            pick up along the way.
           </p>
 
           <div className="hero-actions">
@@ -73,6 +112,48 @@ export default function Home() {
         <span />
         <span />
       </div>
+
+      <section className="section" id="experience">
+        <div className="container">
+          <Reveal>
+            <p className="kicker">work history</p>
+            <h2 className="section-title">Experience</h2>
+          </Reveal>
+
+          <div className="experience-grid">
+            {experience.map((job, index) => (
+              <Reveal delay={index * 100} key={job.company}>
+                <article className={`experience-entry ${job.logoTone}`}>
+                  <div className="experience-logo">{job.logo}</div>
+                  <div className="experience-body">
+                    <div className="experience-meta">
+                      <h3 className="experience-role">{job.role}</h3>
+                      <span className="experience-company">
+                        {job.company} · {job.type}
+                      </span>
+                    </div>
+                    <div className="experience-dates">
+                      <span className="experience-date">{job.dates}</span>
+                      <span className="experience-duration">{job.duration}</span>
+                    </div>
+                    <div className="experience-location">
+                      <span className="experience-place">{job.location}</span>
+                      <span className="experience-onsite">{job.onsite}</span>
+                    </div>
+                    {job.roleNote && (
+                      <p className="experience-note">{job.roleNote}</p>
+                    )}
+                    <div className="experience-skills">
+                      <span className="skill-bullet" aria-hidden="true">⋄</span>
+                      <span className="skill-list">{job.skills}</span>
+                    </div>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="section" id="vibe">
         <div className="container">
