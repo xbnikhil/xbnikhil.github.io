@@ -34,7 +34,7 @@ export default function Home() {
           </p>
 
           <h1 className="hero-title">
-            A happy little corner
+            My little corner
             <br />
             of the <span className="accent-word">internet</span>.
           </h1>

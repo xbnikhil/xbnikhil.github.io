@@ -169,6 +169,14 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 
 ---
 
+### 2026-10-25 — Hero headline copy
+
+**Changed**
+- Hero headline changed from “A happy little corner of the internet.” to “My little corner of the internet.”
+- Updated the page title and meta description to match.
+
+---
+
 <!--
 Template for future entries:
 
