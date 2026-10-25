@@ -121,7 +121,9 @@ All notable activities, decisions, and changes for **Nikhil's Portfolio** are tr
 - Pushed the site source to the new repo and enabled GitHub Pages (GitHub Actions build) at the root.
 - Internal navigation uses React Router relative paths, so the site works unchanged at the root.
 - Updated README and this log with the new live URL and repo.
-- The old `Nikhil-Portfolio` repo remains as an archive; the root site is now canonical.
+- Unpublished GitHub Pages on the old `Nikhil-Portfolio` repo, so `https://xbnikhil.github.io/Nikhil-Portfolio/` now returns 404 and the root site is the single canonical deployment.
+- Verified: root URL 200, deep links (e.g. `/projects`) serve the SPA via `404.html`, and the profile image loads.
+- The old `Nikhil-Portfolio` repo remains as an archive.
 
 ---
 
